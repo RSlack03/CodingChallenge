@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aba Restaurant</title>
+</head>
+
+<body>
+  <header class="header-container grid-container">
+    <div class="logo grid-item">
+      <img src="Aba-Logo.png" alt="Aba Restaurant Logo">
+    </div>
+    <nav class="nav grid-item">
+      <div class="bar-top"></div> <ul>
+        <li><a href="#" aria-label="Reserve a table">RESERVE</a></li>
+        <li><a href="#" aria-label="View the menu">MENU</a></li>
+        <li><a href="#" aria-label="Learn about group dining options">GROUP DINING</a></li>
+        <li><a href="#" aria-label="View upcoming events">EVENTS</a></li>
+        <li><a href="#" aria-label="Learn more about our team">TEAM</a></li>
+      </ul>
+      <div class="bar-bottom"></div> </nav>
+  </header>
+
+  
+  <div class="photo-container" tabindex="0">
+    <figure class="photo">
+      <img src="up-48.jpg" alt="Hummus dish" role="img">
+    </figure>
+  
+    <figure class="photo">
+      <img src="Aba_VillageSalad.jpg" alt="Aba Village Salad" role="img">
+    </figure>
+  </div>
+
+  <div class="spacer-sm"></div>
+    <div class="bar-top"></div> 
+    <div class="spacer-sm"></div>
+
+    <!-- Date-Time-People Form -->
+    <div class="reservation-container">
+      <h2>MAKE A RESERVATION</h2>
+    
+      <form id="reservation-form" class="reservation-form" aria-label="Reservation form">
+        <div class="select-container column">
+          <label for="date" id="date-label"></label>
+          <select id="date" aria-labelledby="date-label" tabindex="1"></select>
+        </div>
+    
+        <div class="select-container column">
+          <label for="time" id="time-label"></label>
+          <select id="time" aria-labelledby="time-label" tabindex="2"></select>
+        </div>
+    
+        <div class="select-container column">
+          <label for="people" id="people-label"></label>
+          <select id="people" aria-labelledby="people-label" tabindex="3"></select>
+        </div>
+    
+        <div class="select-container column">
+          <button type="submit" id="submit-btn" role="button" tabindex="4">Find a table</button>
+        </div>
+      </form>
+    
+      <form id="customer-info-form" class="customer-info-form" style="display: none;">
+        <div class="row">
+          <div class="column">
+            <label for="name" id="name-label"></label>
+            <input type="text" id="name" placeholder="Name" tabindex="5">
+          </div>
+          <div class="column">
+            <label for="phone" id="phone-label"></label>
+            <input type="tel" id="phone" placeholder="Phone number" tabindex="6">
+          </div>
+          <div class="column">
+            <label for="email" id="email-label"></label>
+            <input type="email" id="email" placeholder="Email" tabindex="7">
+          </div>
+          <div class="column">
+            <button type="submit" id="submit-customer-info-btn" role="button" tabindex="8">Submit</button>
+          </div>
+        </div>
+      </form>
+    
+      <div id="success-message" role="alert" style="display: none;">
+        Thank you for your reservation!
+      </div>
+    </div>
+    
+
+  <div class="spacer-sm"></div>
+  <div class="spacer-sm"></div>
+  
+    <!-- Reference the JavaScript file -->
+    <script src="script.js"></script>
+  <div class="bar-bottom"></div> 
+  <div class="spacer"></div>
+  
+
+
+
+<!-- Group Dining Section -->
+<div class="section-container">
+    <div class="section-text">
+        <div class="bar-top"></div>
+      <h2>GROUP DINING AT ABA</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae semper orci. Fusce hendrerit lectus eu quam bibendum, a fringilla mi iaculis.</p>
+      <button class="party-button">PLAN YOUR PARTY</button>
+      <div class="bar-bottom"></div>
+    </div>
+    <div class="about-section-photo">
+      <img src="up-35.1.jpg" alt="Group Dining Photo">
+    </div>
+  </div>
+  
+
+    <!-- Wine Dinner Section -->
+    <div class="section-container-reverse">
+        <div class="about-section-photo-reverse">
+            <img src="up-35.jpg" alt="Wine Dinner Photo">
+        </div>
+        <div class="section-text-reverse">
+            <div class="bar-top"></div>
+            <h2>WINE DINNER</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae semper orci. Fusce hendrerit lectus eu quam bibendum, a fringilla mi iaculis.</p>
+            <h3>June 13th, 2018 at 7pm</h3>
+            <button class="wine-button">Learn More</button>
+            <div class="bar-bottom"></div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="section-container">
+        <div class="section-text">
+            <div class="bar-top"></div>
+            <h2>ABOUT ABA</h2>
+            <p>Aba is a restaurant with a rooftop patio located in Chicago's historic Fulton Market District. It is Chef CJ Jacobson's second restaurant with Lettuce Entertain You, and it is an extension of Ēma (mother in Hebrew) in River North. Aba, meaning "father" in Hebrew, incorporates Ēma's style of cooking with a larger influence of steak, raw and chilled seafood. The beverage program is crafted by Wine Director Ryan Arnold and Mixologist Liz Pearce, showcasing Mediterranean-inspired rare wines and spirits.</p>
+            <div class="bar-bottom"></div>
+        </div>
+        <div class="about-section-photo">
+            <img src="up-42.jpg" alt="About Aba Photo">
+        </div>
+    </div>
+
+    <footer role="footer">
+        <div class="footer-container">
+          <!-- Column 1 -->
+          <div class="footer-column">
+            <!-- Empty placeholder -->
+          </div>
+          <!-- Column 2 -->
+          <div class="footer-column">
+            <!-- Empty placeholder -->
+          </div>
+          <!-- Column 3 -->
+          <div class="footer-column">
+            <h3 id="footer-column-hours">HOURS</h3>
+            <p>Tues - Thurs 12pm - 10pm</p>
+            <p>Fri 12pm - 1am</p>
+            <p>Sat 11am - 1am</p>
+            <p>Sun 10am - 9pm</p>
+          </div>
+          <!-- Column 4 -->
+          <div class="footer-column">
+            <h3 id="footer-column-locations">LOCATIONS</h3>
+            <p>302 N Green Street,</p>
+            <p>3rd Floor</p>
+            <p>Chicago, IL 60607</p>
+            <p>773-645-1400</p>
+          </div>
+        </div>
+
+        <div class="footer-container">
+            <!-- Column 1 -->
+            <div class="footer-column">
+              <!-- Empty placeholder -->
+            </div>
+            <!-- Column 2 -->
+            <div class="footer-column">
+              <!-- Empty placeholder -->
+            </div>
+            <!-- Column 3 -->
+            <div class="footer-column">
+                <h3><a href="#">CONTACT</a></h3> 
+                <h3><a href="#">NEWSLETTER</a></h3>
+            </div>
+            <!-- Column 4 -->
+            <div class="footer-column">
+            <!-- Empty placeholder -->   
+            </div>
+          </div>
+
+          <div class="spacer"></div>
+
+
+
+        <!-- Bottom links -->
+        <div class="footer-credit">
+          <a href="#">FREQUENT DINER</a>
+          <a href="#">GIFT CARDS</a>
+          <a href="#">EMPLOYMENT</a>
+          <a href="#">LEYE.COM</a>
+          <a href="#">TERMS OF USE</a>
+          <a href="#">PRIVACY POLICY</a>
+        </div>
+      </footer>
+
+</body>
+</html>
