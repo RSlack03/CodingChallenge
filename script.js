@@ -4,16 +4,20 @@ const timeSelect = document.getElementById('time');
 const peopleSelect = document.getElementById('people');
 
 
+// Get the current date
+const today = new Date();
+
 // Create an array of the date options
 const dateOptions = [];
-for (let i = 1; i <= 31; i++) {
-  const date = new Date(2023, 9, i);
+for (let i = 0; i <= 30; i++) {
+  const date = new Date(today.getFullYear(), today.getMonth(), today.getDate() + i);
   const formattedDate = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
   dateOptions.push(formattedDate);
 }
 
 // Add the date options to the select element
 dateSelect.innerHTML = dateOptions.map(date => `<option value="${date}">${date}</option>`).join('');
+
 
 // Create an array of the time options
 const timeOptions = [];
