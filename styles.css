@@ -1,18 +1,17 @@
-
 body {
-    margin: 0;
-    padding: 0;
-    background-image: url('white-wood.jpeg');
-    font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('white-wood.jpeg');
+  font-family: 'Playfair Display', serif;
 }
 
 header {
-    width: 90%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    text-align: center; /* Center the contents horizontally */
+  width: 90%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  text-align: center; /* Center the contents horizontally */
 }
 
 .header-container {
@@ -22,32 +21,47 @@ header {
   grid-gap: 10px;
   align-items: center;
   justify-content: left;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 10px; /* Add spacing around the header container */
 }
 
 .logo img {
-    max-width: 175px;
-    height: auto;
+  max-width: 175px;
+  height: auto;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: fill; /* Add spacing between menu items */
-    flex-grow: 1; /* Allow navigation links to grow and adjust spacing */
-    justify-content: space-between; /* Space the navigation links evenly */
-    margin-right: 40px;
+  list-style: none;
+  display: flex;
+  gap: 10px; /* Add spacing between menu items */
+  flex-grow: 1; /* Allow navigation links to grow and adjust spacing */
+  justify-content: space-between; /* Space the navigation links evenly */
 }
 
 nav a {
-    text-decoration: none;
-    color: #3F3F3F; 
-    font-weight: bold;
+  text-decoration: none;
+  color: #3F3F3F;
+  font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* Stack the logo and navigation links on top of one another for small screens */
+@media (max-width: 768px) {
+  .header-container {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px; /* Add spacing between menu items */
+    flex-grow: 1; /* Allow navigation links to grow and adjust spacing */
+    justify-content: center; /* Center the navigation links evenly */
+    margin-right: 10%;
+  }
 }
 
 .bar-top,
@@ -178,6 +192,7 @@ nav a:hover {
 }
 
 /* ---- Customer Info Form ---- */
+/* ---- Customer Info Form ---- */
 
 .customer-info-form {
   display: flex;
@@ -207,12 +222,6 @@ nav a:hover {
   align-items: center;
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
 .customer-info-form .column select,
 .customer-info-form .column button {
   width: 100%;
@@ -228,6 +237,8 @@ nav a:hover {
   align-items: center;
   display: flex;
   justify-content: center;
+  box-sizing: border-box;
+  flex-shrink: 1;
 }
 
 /* Make the submit button the same height as the select boxes */
@@ -240,12 +251,10 @@ nav a:hover {
   flex-grow: 1;
 }
 
-
 /* Align the contents of the columns vertically */
 .customer-info-form .column {
   align-items: stretch;
 }
-
 
 
 #success-message {
@@ -301,6 +310,7 @@ nav a:hover {
 
 .section-text p {
   text-align: center;
+  font-family: 'Playfail Display'if;
 }
 
 .section-photo {
